@@ -1,6 +1,14 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+pages = {
+    "Simple tools for traders": [],
+    "CAGR": [
+        st.Page("cagr.py", title="Calculate CAGR"),
+        st.Page("reverse_cagr.py", title="Calculate reverse CAGR"),
+    ],
+    
+}
+
+st.header("Simple tools for traders", divider=True)
+pg = st.navigation(pages)
+pg.run()
