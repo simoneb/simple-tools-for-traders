@@ -8,6 +8,9 @@ pages = {
     ],
     "Minus": [
         st.Page('minus.py', title="Compensate minus")
+    ],
+    'VIX': [
+        st.Page('vix.py', title="VIX Term Structure")
     ]
 }
 
